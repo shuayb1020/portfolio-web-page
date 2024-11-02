@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="hero-text">
+                <h1>Hello, I'm Abdul-Yakeen Shuayb</h1>
+                <p>Frontend Developer focusing on simplicity and user-centered design.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="CodeEstimator.png" alt="Project 1">
+                <h3>Code Estimator</h3>
+                <p class="project-desc">A web application that compute and compare maintanance effort, time, and cost</p>
+
+            </div>
+            <div class="project-card">
+                <img src="quiz.png" alt="Project 2">
+                <h3>Knowledge Knockout</h3>
+                <p class="project-desc"> A quiz application that tests users on their knowledge of programming.</p>
+
+            </div>
+
+            <div class="project-card">
+                <img src="hostel.png" alt="Project 3">
+                <h3>Hostel App</h3>
+                <p class="project-desc">An hostel application that allows student register and login to their account and view their hostel details.</p>
+        </div>
+        <div class="project-card">
+            <img src="dojoblog.png" alt="Project 4">
+            <h3>Dojo Blog</h3>
+            <p class="project-desc">A blog application that allows users to create, read, update blogs .</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-row">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Bootstrap</span>
+            <span class="skill">JQuery</span>
+            <span class="skill">ReactJs</span>
+            <span class="skill">MySQL</span>
+            <!-- Add more skills as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form name="Form handler" 
+            action="https://formspree.io/f/xqakpdpy"
+            method="POST"
+            >
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name ="email" placeholder="Your Email" required>
+
+            <textarea name="message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social-media">
+        <h2>Connect with Me</h2>
+        <div class="social-icons">
+            <a href="https://x.com/ShuaybYakeen?t=EGfg7DQ1ooqYLrCMr_5LfQ&s=09" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/shuayb-abdul-yakeen-187372228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/shuayb1020" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <!-- <a href="https://instagram.com/yourusername" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a> -->
+            
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Abdul-Yakeen Shuayb. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
