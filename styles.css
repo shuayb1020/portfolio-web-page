@@ -22,12 +22,25 @@ nav {
     z-index: 1000;
 }
 
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
     gap: 1.5rem;
-    flex-wrap: wrap;
 }
 
 nav ul li a {
@@ -42,6 +55,44 @@ nav ul li a:hover {
     background-color: #3949ab;
     border-radius: 5px;
 }
+
+/* Hamburger Icon - Hidden by default */
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Hide the nav menu by default and show the hamburger */
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        display: none; /* Hide menu initially */
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        background-color: #5c6bc0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Show menu when nav-menu is toggled */
+    nav ul.active {
+        display: flex;
+    }
+}
+
 
 /* Hero Section */
 .hero {
