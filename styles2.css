@@ -9,7 +9,7 @@
 body {
     font-family: 'Helvetica Neue', sans-serif;
     color: #333;
-    background-color: #f4f4f9;
+    /* background-color: #f4f4f9; */
 }
 
 /* Navigation Bar */
@@ -17,9 +17,7 @@ nav {
     background-color: #5c6bc0;
     padding: 1rem 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+
 }
 
 nav ul {
@@ -27,7 +25,6 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    flex-wrap: wrap;
 }
 
 nav ul li a {
@@ -55,7 +52,7 @@ nav ul li a:hover {
 }
 
 .hero .overlay {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
     padding: 2rem;
     text-align: center;
     width: 100%;
@@ -67,25 +64,23 @@ nav ul li a:hover {
 }
 
 .profile-pic {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     margin-bottom: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .hero-text h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #fff;
     margin-bottom: 0.5rem;
-    text-align: center;
 }
 
 .hero-text p {
     color: #ddd;
-    font-size: 1rem;
+    font-size: 1.2rem;
     max-width: 600px;
-    text-align: center;
 }
 
 /* Projects Section */
@@ -93,6 +88,7 @@ nav ul li a:hover {
     padding: 3rem 2rem;
     text-align: center;
     background-color: #ffffff;
+    
 }
 
 #projects h2 {
@@ -119,12 +115,12 @@ nav ul li a:hover {
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-30px);
+    cursor: pointer;
 }
-
 .project-card img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 
 .project-card h3 {
@@ -168,8 +164,6 @@ nav ul li a:hover {
     color: #333;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
-    font-size: 1rem;
-    margin: 0.5rem;
 }
 
 .skill:hover {
@@ -224,55 +218,15 @@ nav ul li a:hover {
     background: #5c6bc0;
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    /* Navbar Adjustments */
-    nav ul {
-        flex-direction: column;
-        padding: 0;
-    }
-    nav ul li {
-        margin: 0.5rem 0;
-    }
-
-    /* Hero Section Adjustments */
-    .hero {
-        height: auto;
-        padding: 2rem 1rem;
-    }
-    .hero-text h1 {
-        font-size: 1.8rem;
-    }
-    .hero-text p {
-        font-size: 1rem;
-    }
-    .profile-pic {
-        width: 80px;
-        height: 80px;
-    }
-
-    /* Projects Section Adjustments */
-    .project-card {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    /* Skills Section Adjustments */
-    .skills-row {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-    .skill {
-        width: 80%;
-    }
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #3f51b5;
+    color: #fff;
+    font-size: 0.9rem;
 }
 
-@media (max-width: 480px) {
-    .skill {
-        width: 100%;
-    }
-}
 #social-media {
     text-align: center;
     margin: 20px 0;
@@ -292,12 +246,4 @@ nav ul li a:hover {
 
 .social-icon:hover {
     color: #007BFF; /* Change color on hover */
-}
-/* Footer */
-footer {
-    text-align: center;
-    padding: 1rem;
-    background: #3f51b5;
-    color: #fff;
-    font-size: 0.9rem;
 }
