@@ -3,7 +3,7 @@ name: deploy
 on:
   push:
     branches:
-      - 'deploy'
+      - 'main'
   workflow_dispatch:
     inputs:
       deployment_notes:
